@@ -1,0 +1,115 @@
+body
+	position relative
+	min-width 320px
+	width 100%
+	color #141414
+	font-weight 400
+	transition 0.5s all
+	background-color white
+  -webkit-font-smoothing none
+
+
+html
+	font-family Montserrat, sans-serif
+	font-size 62.5%
+	font-size 14px
+	line-height 1.4
+	letter-spacing 0
+	min-width 320px
+	margin-left auto
+	margin-right auto
+
+
+section
+	padding 100px 0
+	transition 1s transform
+	+to-width(520px)
+		padding 60px 0
+
+.section
+
+	&-title
+		font-size 38px
+		font-weight 700
+		line-height 50px
+		letter-spacing 0.76px
+		text-align center
+		padding-bottom 0px
+		+to-width(900px)
+			font-size 32px
+			line-height 42px
+		+to-width(640px)
+			font-size 26px
+			line-height 36px
+		+to-width(520px)
+			font-size 22px
+			line-height 32px
+
+
+	&-text
+		font-size 20px
+		line-height 24px
+		color #8A94A6
+
+
+.wrap
+	position relative
+	padding 0 30px
+	width 100%
+	margin-left auto
+	margin-right auto
+	max-width 1260px
+	+to-width(992px)
+		padding 0 30px
+	+to-width(640px)
+		padding 0 20px
+
+
+
+.main
+	display flex
+	flex-direction column
+	min-height 100vh
+	position relative
+	z-index 2
+
+.main-button
+	width 250px
+	height 54px
+	box-shadow 4px 6px 60px rgba(250, 129, 22, 0.38)
+	border-radius 27px
+	background-color #fb8822
+	display flex
+	justify-content center
+	align-items center
+	color #ffffff
+	font-size 18px
+	font-weight 700
+	line-height 40px
+	transition 0.3s box-shadow
+	&:hover
+		box-shadow 4px 6px 60px rgba(250, 129, 22, 0)
+
+	+to-width(540px)
+		font-size 16px
+		width 230px
+		height 48px
+
+.second-button
+	width 250px
+	height 54px
+	box-shadow 4px 6px 60px rgba(167, 255, 200, 0.38)
+	border-radius 30px
+	background-color #a7ffc8
+	display flex
+	justify-content center
+	align-items center
+	color #141414
+	font-size 18px
+	font-weight 700
+	line-height 40px
+	margin 0 auto
+	margin-top 60px
+	transition 0.3s box-shadow
+	&:hover
+		box-shadow 4px 6px 60px rgba(167, 255, 200, 0)

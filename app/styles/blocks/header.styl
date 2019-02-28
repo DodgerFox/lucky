@@ -1,0 +1,84 @@
+.header
+  position absolute
+  width 100%
+  z-index 10
+  top 0
+  left 0
+  padding-top 44px
+
+  .wrap
+    height 100%
+    display flex
+    align-items center
+    justify-content space-between
+
+  &-logo
+    img
+      +to-width(540px)
+        max-width 115px
+  &-phone
+    color #141414
+    t()
+    &__numbers
+      font-size 20px
+      font-weight 700
+      padding-bottom 9px
+      +to-width(540px)
+        font-size 14px
+
+    &__text
+      font-size 12px
+      font-weight 600
+      text-align right
+      +to-width(540px)
+        font-size 10px
+
+    &:hover
+      color #fa8116
+
+
+.nav
+  t()
+  &.open
+    transform translateX(0)
+    pointer-events all
+    opacity 1
+
+  &-list
+    display flex
+  &-item
+    margin-right 40px
+    font-weight 600
+    +to-width(1100px)
+      margin-right 20px
+    +to-width(1023px)
+      display none
+    a
+      t()
+      display flex
+      align-items center
+      position relative
+      color #141414
+      padding-bottom 12px
+      &:after
+        content ''
+        left 0px
+        right 0px
+        height 2px
+        position absolute
+        bottom 0
+        background-color #fa8116
+        opacity 0
+        pointer-events none
+        t()
+
+
+      &:hover
+        color #fa8116
+
+    &:last-child
+      margin-right 0
+      a
+        color #fa8116
+        &:after
+          opacity 1

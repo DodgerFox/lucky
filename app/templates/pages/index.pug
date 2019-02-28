@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+block head
+
+block content
+	include ../blocks/header
+	main.main
+		include ../blocks/welcome
+		include ../blocks/best
+		include ../blocks/options
+		include ../blocks/time
+		include ../blocks/photos
+		include ../blocks/video
+		include ../blocks/quality
+		//- include ../blocks/feedback
+		//- include ../blocks/delivery
+		include ../blocks/form
+	//- include ../blocks/footer
+
+	+script('common.min')
+	+script('main')
+	+script('select')
